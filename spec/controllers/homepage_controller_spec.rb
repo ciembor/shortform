@@ -3,7 +3,7 @@ require 'spec_helper'
 describe HomepageController do
 
   describe "GET 'index'" do
-    let(:publication) { Publication.create(content: 'First publication.') }
+    let!(:publication) { Publication.create(content: 'First publication.') }
 
     it "returns http success" do
       get 'index'
