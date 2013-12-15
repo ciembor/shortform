@@ -16,8 +16,8 @@ feature 'Homepage' do
     end
 
     it 'which is ordered from the newest to the oldest publications' do
-      page.should have_tag('ul:nth-child(1)', text: first_publication.content)
-      page.should have_tag('ul:nth-child(2)', text: second_publication.content)
+      page.should have_selector('ul:nth-child(1)', text: first_publication.content)
+      page.should have_selector('ul:nth-child(2)', text: second_publication.content)
     end
   end
 end
