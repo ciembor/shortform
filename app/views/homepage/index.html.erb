@@ -1,1 +1,5 @@
-<ul id="publications"></ul>
+<ul id="publications">
+  <% @publications.each do |publication| %>
+    <li><%= publication.content %></li>
+  <% end %>
+</ul>
